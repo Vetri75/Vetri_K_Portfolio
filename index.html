@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetri | Java Full-Stack Developer</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Typed.js Library -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Dark Mode Toggle -->
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+            <!-- Mobile Menu Icon -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">
+        <div class="progress-dot"></div>
+    </div>
+    
+
+
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1 class="head-ing">Hello, I'm Vetri</h1>
+        <div class="typing-effect"></div>
+        <p>Hi, I'm a Java Full-Stack Developer who loves building scalable applications with Spring Boot and React. I
+            enjoy working on backend development and API design while creating smooth and responsive user experiences.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects">
+                <button class="work-btn">View My Work</button></a>
+            <a href="#contact"><button class="contact-btn">Contact Me</button></a>
+        </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+        <img src="FOB00366_Original.JPG" alt="Vetri's Image">
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about-me" id="about">
+        <h1 class="head-ing">About Me</h1>
+        <p>Hi, I’m a Computer Science and Engineering graduate (Class of 2023) with a deep passion for backend
+            development.<strong>I specialize in Java and Spring Boot, building scalable, efficient, and secure applications.
+            Whether it’s designing RESTful APIs, implementing authentication, or managing databases,</strong> I love solving
+            complex problems and transforming them into seamless solutions.</p>
+        <p><strong>I’m always eager to explore new backend architectures, optimize system performance, and stay ahead of the
+            latest tech trends.</strong> Writing clean, maintainable, and efficient code isn’t just a best practice for me—it’s a
+            mindset. My goal is to develop software that doesn’t just work but excels in performance and reliability.
+        </p>
+        <p>Beyond coding, I’m constantly learning new technologies, refining my problem-solving skills, and working on
+            innovative projects. I believe that continuous learning and adaptability are the keys to long-term success
+            in tech.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills" id="skills">
+        <h1 class="head-ing">My Skills</h1>
+        <p class="work-re">Technologies I specialize in:</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h2>Backend</h2>
+                <div class="progress-wrapper">
+                    <p>Java</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="90%">90%</div>
+                    </div>
+                    <p>Spring Boot</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="85%">85%</div>
+                    </div>
+                    <p>REST APIs</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80%">80%</div>
+                    </div>
+                    <p>Spring Security (Basic)</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="60%">60%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h2 class="blue-text">Frontend</h2>
+                <div class="progress-wrapper">
+                    <p>HTML</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="70%">70%</div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="70%">70%</div>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="70%">70%</div>
+                    </div>
+                    <p>React (Basic)</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="60%">60%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h2>Tools & Databases</h2>
+                <div class="progress-wrapper">
+                    <p>MySQL</p>
+                    <div class="progress-bar">
+                        <div class="progress" data-width="80%">80%</div>
+                    </div>
+                    <p class="skill-cards"><img src="git-icon.png" alt="Git" width="20"> Git</p>
+                    <p class="skill-cards"><img src="postman-icon.png" alt="Postman" width="20"> Postman</p>
+                    <p class="skill-cards"><img src="vscode-icon.png" alt="VS Code" width="20"> VS Code</p>
+                    <p class="skill-cards"><img src="eclipse-icon.png" alt="Eclipse" width="20"> Eclipse</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" id="projects">
+        <div class="container">
+            <h2 class="head-ing">Projects</h2>
+            <p class="work-re">Recent Projects I've Worked On</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="te-le">Employee Management System</h3>
+                    <h4>Overview:</h4>
+                    <p>The Employee Management System (EMS) is a full-stack web application designed to manage employee
+                        data efficiently. It allows administrators to perform CRUD operations (Create, Read, Update,
+                        Delete) on employee records while implementing role-based access control.</p>
+                    <h4>Tech Stack:</h4>
+                    <p><strong>Backend-</strong> Spring Boot (Java), Spring Security (JWT Authentication), MySQL</p>
+                    <p><strong>Frontend-</strong> React.js (Vite, Axios, JSX)</p>
+                    <p><strong>Database-</strong> MySQL</p>
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Employee CRUD Operations (Add, Edit, Delete, View)</li>
+                        <li>User Authentication & Authorization (JWT-based)</li>
+                        <li>Role-based Access Control (Admin & Employee roles)</li>
+                        <li>Secure REST APIs with Spring Security</li>
+                        <li>Responsive UI built with React.js</li>
+                        <li>MySQL database integration</li>
+                    </ul>
+                    <div class="github-link">
+                        <a href="https://github.com/yourusername/ems" target="_blank">GitHub Repository Link</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="te-le">Banking App (Backend-Only)</h3>
+                    <h4>Overview:</h4>
+                    <p>The Banking Application is a backend system developed using Spring Boot, designed to manage core
+                        banking functionalities such as account creation, transactions, and balance inquiries. This
+                        project focuses on secure and efficient handling of banking operations with RESTful API
+                        architecture.</p>
+                    <h4>Tech Stack:</h4>
+                    <p><strong>Backend-</strong> Spring Boot, RESTful APIs</p>
+                    <p><strong>Database-</strong> MySQL</p>
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>User account creation and management</li>
+                        <li>Transaction handling (Deposit, Withdraw, Transfer)</li>
+                        <li>Balance inquiry with real-time updates</li>
+                        <li>REST API implementation for seamless integration</li>
+                        <li>Exception handling and logging</li>
+                    </ul>
+                    <div class="github-link">
+                        <a href="https://github.com/yourusername/banking-app" target="_blank">GitHub Repository Link</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="te-le">Secure File Storage</h3>
+                    <p>A hybrid cryptography-based secure file storage system ensuring data confidentiality and
+                        integrity.</p>
+                    <div class="github-link">
+                        <a href="https://github.com/yourusername/secure-file-storage" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="te-le blue-text">JavaScript To-Do List</h3>
+                    <h4>Overview:</h4>
+                    <p>The JavaScript To-Do List is a simple yet powerful task management application built using HTML,
+                        CSS, and JavaScript. It enables users to efficiently manage their daily tasks with features such
+                        as adding, deleting, updating, and searching tasks. The intuitive interface ensures a smooth
+                        user experience, making it easy to track and organize tasks dynamically.</p>
+                    <h4>Tech Stack</h4>
+                    <p><strong>HTML5-</strong> Structure of the web page</p>
+                    <p><strong>CSS3-</strong> Styling for a modern and responsive UI</p>
+                    <p><strong>JavaScript-</strong> DOM manipulation, event handling, and local storage</p>
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Task Management – Add, update, delete, and search tasks dynamically.</li>
+                        <li>Real-Time Filtering – Instantly find tasks by name or course.</li>
+                        <li>Interactive UI – Smooth and user-friendly experience.</li>
+                        <li>DOM Manipulation – Immediate updates without page refresh.</li>
+                        <li>Local Storage Support – Tasks can be saved and persist even after the page is reloaded.</li>
+                    </ul>
+                    <div class="github-link">
+                        <a href="https://github.com/yourusername/todo-list" target="_blank" class="blue-text">View on
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 30px;">
+            <p>For more Projects:</p>
+            <a href="#" title="github icons"><img src="github (1).png" style="height: 30px;"></a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="form-sec" id="contact">
+        <h1 class="head-ing">Contact</h1>
+        <form id="contact-form">
+            <div class="form-in">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <span class="enter-de">Enter your Name</span>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="error-message-container">
+                    <div id="name-error" class="error-message">This field is required.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <span class="enter-de">Enter your Email</span>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="error-message-container">
+                    <div id="email-error" class="error-message">Please enter a valid email address.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <span class="enter-de">Feel free to type any queries or details in the box below.</span>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <div class="error-message-container">
+                    <div id="message-error" class="error-message">This field is required.</div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">send message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="contact-info">
+            <p><span>Phone No:</span> 7305237521</p>
+            <p><span>Email:</span> kvetri91@gmail.com</p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/your-profile" target="_blank">
+                <img src="github (1).png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    <!-- JavaScript for Typing Effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Typed(".typing-effect", {
+                strings: [
+                    "Java Full-Stack Developer !",
+                    "Java Developer !",
+                    "Spring Boot Developer !",
+                    "Backend Engineer !",
+                    "API Developer !"
+                ],
+                typeSpeed: 80,  // Speed of typing
+                backSpeed: 15,   // No backspacing
+                backDelay: 1500, // Delay before changing to next text
+                startDelay: 500, // Delay before typing starts
+                loop: true,  // Infinite loop
+                showCursor: false,
+                smartBackspace: false, // Prevents erasing before the next text
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
