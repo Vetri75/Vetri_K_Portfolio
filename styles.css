@@ -3,11 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Cormorant", serif !important;
+    font-weight: 900 ;
     color: #666;
 }
 
-
+.bol-der{
+    font-size: 20px;
+    font-weight: 300;
+}
 body {
     background-color: #ffffff;
     color: #333;
@@ -31,7 +35,7 @@ nav.dark-mode {
     color: #ffffff;
 }
 
-.hero.dark-mode, .about-me.dark-mode, .skills.dark-mode, #projects.dark-mode, .form-sec.dark-mode, .footer.dark-mode {
+.hero.dark-mode, .about-me.dark-mode, .skills.dark-mode, #projects.dark-mode, .form-sec.dark-mode, .footer.dark-mode,.hero-image.dark-mode {
     background-color: #1a1a1a;
     color: #ffffff;
 }
@@ -132,7 +136,7 @@ nav ul li a{
 }
 
 .nav-links li {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
@@ -277,7 +281,7 @@ input:checked + .slider:before {
     min-height: 30px;
 }
 .hero p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     max-width: 600px;
     margin: 10px auto 20px;
@@ -290,7 +294,7 @@ input:checked + .slider:before {
 }
 .hero button {
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -315,14 +319,28 @@ input:checked + .slider:before {
 .hero-image {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 20px;
 }
+
 .hero-image img {
-    max-width: 80%;
+    background-color: #f3f3f3;
+    width: 80%; /* Responsive width */
+    /* max-width: 600px; Maximum width limit */
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Box shadow for a stylish look */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+    /* Border-radius using percentage for consistency */
+    border-radius: 13vw 0vw 13vw 0vw;
+    -moz-border-radius: 13vw 0vw 13vw 0vw;
+    -webkit-border-radius: 13vw 0vw 13vw 0vw;
+
+    /* Border styling */
+    border: 2px solid #c4a8c4; 
 }
+
 /* About Me Section */
 .about-me {
     text-align: center;
@@ -335,7 +353,7 @@ input:checked + .slider:before {
     margin-bottom: 20px;
 }
 .about-me p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
     max-width: 700px;
     margin: 0 auto 15px;
@@ -371,7 +389,7 @@ input:checked + .slider:before {
 }
 
 .work-re {
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 40px;
     color: #666;
 }
@@ -410,7 +428,7 @@ input:checked + .slider:before {
 }
 
 .progress-wrapper p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -570,7 +588,7 @@ animation: slideRightToLeft 1s ease-in-out forwards;
 
 
 .project-card p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     line-height: 1.7;
     text-align: justify !important;
@@ -580,13 +598,13 @@ animation: slideRightToLeft 1s ease-in-out forwards;
 
 .project-card ul {
     text-align: justify;
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     flex-grow: 1; 
 }
 
 .project-card ul li {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 8px;
     text-align: justify;
     margin-bottom: 10px;
@@ -665,7 +683,7 @@ animation: slideRightToLeft 1s ease-in-out forwards;
 }
 .enter-de {
     color: #666;
-    font-size: 12px;
+    font-size: 14px;
 }
 .form-group input {
     border: none;
@@ -774,7 +792,7 @@ animation: slideRightToLeft 1s ease-in-out forwards;
 
 .contact-info p {
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
 }
 .contact-info p span{
